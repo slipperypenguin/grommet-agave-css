@@ -1,18 +1,19 @@
 {
-  "name": "grommet-css",
-  "version": "1.6.0",
+  "name": "grommet-agave-css",
+  "version": "1.8.0",
   "description": "Standalone css for grommet ui library.",
-  "main": "build/index.min.css",
+  "main": "build/agavehpe/index.min.css",
   "scripts": {
     "build": "node-sass index.scss build/index.min.css --output-style compressed --include-path ./node_modules",
-    "build:buildabode": "node-sass themes/buildabode/index.scss build/buildabode/index.min.css --output-style compressed --include-path ./node_modules",
+    "build:agavecss": "node-sass themes/agavecss/index.scss build/agavecss/index.min.css --output-style compressed --include-path ./node_modules",
+    "build:agavehpe": "node-sass themes/agavehpe/index.scss build/agavehpe/index.min.css --output-style compressed --include-path ./node_modules",
     "start": "node-sass index.scss build/index.min.css -w --output-style compressed --include-path ./node_modules"
   },
   "keywords": [
     "create-react-app",
     "grommet"
   ],
-  "author": "Mel van Londen",
+  "author": "Brady Paterson",
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.5.1"
